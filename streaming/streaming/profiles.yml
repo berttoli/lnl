@@ -3,7 +3,7 @@ streaming:
     sbx:
       type: materialize
       threads: 1
-      host: localhost
+      host: 172.19.0.4
       port: 6877
       user: materialize
       pass: materialize
