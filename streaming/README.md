@@ -26,4 +26,11 @@
  1121  ls
  1122  ls -salt
  1123  source .local/bin/activate
+ 1132  pip install dbt-core
+  1133  ls
+  1134  dbt
+  1135  dbt --help
+  1136  dbt init
+  1137  pip install dbt-materialize
 ```
+pip install ..
