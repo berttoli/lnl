@@ -1,29 +1,17 @@
-default:
+streaming:
   outputs:
-    prod:
+    sbx:
       type: materialize
       threads: 1
-      host: <host>
-      port: 6875
-      user: <user@domain.com>
-      pass: <password>
+      host: localhost
+      port: 6877
+      # user: <user@domain.com>
+      # pass: <password>
       database: materialize
       schema: public
       # optionally use the cluster connection
       # parameter to specify the default cluster
       # for the connection
-      cluster: <prod_cluster>
+      # cluster: <prod_cluster>
       sslmode: require
-    dev:
-      type: materialize
-      threads: 1
-      host: <host>
-      port: 6875
-      user: <user@domain.com>
-      pass: <password>
-      database: <dev_database>
-      schema: <dev_schema>
-      cluster: <dev_cluster>
-      sslmode: require
-
-  target: dev
+  target: sbx
